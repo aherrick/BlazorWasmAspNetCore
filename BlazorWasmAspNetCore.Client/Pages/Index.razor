@@ -1,0 +1,17 @@
+﻿@page "/"
+@inject HttpClient Http
+
+<h3>API Call Example</h3>
+
+<button @onclick="CallApi">Call API</button>
+
+<p>@message</p>
+
+@code {
+    private string message = "Click the button to fetch data.";
+
+    private async Task CallApi()
+    {
+        message = await Http.GetStringAsync("weather"); // Calls the API's endpoint
+    }
+}
