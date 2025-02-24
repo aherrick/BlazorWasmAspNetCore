@@ -3,7 +3,6 @@
   <PropertyGroup>
     <TargetFramework>net9.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
-    <AssemblyName>$(AssemblyName.Replace(' ', '_'))</AssemblyName>
   </PropertyGroup>
 
   <ItemGroup>
@@ -13,7 +12,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Shared\BlazorApp-empty1.Shared.csproj" />
+    <ProjectReference Include="..\BlazorWasmAspNetCore.Shared\BlazorWasmAspNetCore.Shared.csproj" />
   </ItemGroup>
 
 </Project>

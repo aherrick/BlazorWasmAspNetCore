@@ -13,8 +13,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Client\BlazorApp-empty1.Client.csproj" />
-    <ProjectReference Include="..\Shared\BlazorApp-empty1.Shared.csproj" />
+    <ProjectReference Include="..\BlazorWasmAspNetCore.Client\BlazorWasmAspNetCore.Client.csproj" />
+    <ProjectReference Include="..\BlazorWasmAspNetCore.Shared\BlazorWasmAspNetCore.Shared.csproj" />
   </ItemGroup>
 
 </Project>
