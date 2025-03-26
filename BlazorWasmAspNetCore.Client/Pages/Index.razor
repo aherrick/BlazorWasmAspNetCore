@@ -12,6 +12,6 @@
 
     private async Task CallApi()
     {
-        message = await Http.GetStringAsync("weather"); // Calls the API's endpoint
+        message = (await Http.GetFromJsonAsync<ExampleClass>("hello")).Name; // Calls the API's endpoint
     }
 }

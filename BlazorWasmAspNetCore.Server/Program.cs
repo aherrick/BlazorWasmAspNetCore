@@ -1,3 +1,5 @@
+using BlazorWasmAspNetCore.Shared;
+
 var builder = WebApplication.CreateBuilder(args);
 
 var app = builder.Build();
@@ -21,6 +23,6 @@ app.UseStaticFiles();
 
 app.MapFallbackToFile("index.html");
 
-app.MapGet("/weather", () => "Hello from API!");
+app.MapGet("/hello", () => new ExampleClass("Andrew"));
 
 app.Run();
